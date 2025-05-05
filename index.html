@@ -25,9 +25,7 @@
     <!-- Google Fonts ================================================== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -74,7 +72,7 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="product-item position-relative">
-                            <img src="images/newarrival-items1.jpg" alt="new1" class="img-fluid">
+                            <img src="images/newarrival-items1.jpg" alt="new1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#productModal1">
                             <div class="d-flex justify-content-between mt-2">
                                 <h5><a href="#" class="item-name secondary-font">Oversized t-shirt</a></h5>
                                 <h5 class="money fw-bold secondary-font">$31.31</h5>
@@ -83,7 +81,7 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="product-item position-relative">
-                            <img src="images/newarrival-items2.jpg" alt="new1" class="img-fluid">
+                            <img src="images/newarrival-items2.jpg" alt="new2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#productModal2">
                             <div class="d-flex justify-content-between mt-2">
                                 <h5><a href="#" class="item-name secondary-font">Leather overcoat</a></h5>
                                 <h5 class="money fw-bold secondary-font">$31.31</h5>
@@ -92,28 +90,246 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="product-item position-relative">
-                            <img src="images/newarrival-items3.jpg" alt="new1" class="img-fluid">
+                            <img src="images/newarrival-items3.jpg" alt="new3" class="img-fluid" data-bs-toggle="modal" data-bs-target="#productModal3">
                             <div class="d-flex justify-content-between mt-2">
                                 <h5><a href="#" class="item-name secondary-font">The hundred hoody</a></h5>
-                                <h5 class="money fw-bold secondary-font">$31.310</h5>
+                                <h5 class="money fw-bold secondary-font">$31.31</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-item position-relative">
+                            <img src="images/newarrival-items1.jpg" alt="new4" class="img-fluid" data-bs-toggle="modal" data-bs-target="#productModal4">
+                            <div class="d-flex justify-content-between mt-2">
+                                <h5><a href="#" class="item-name secondary-font">Classic white tee</a></h5>
+                                <h5 class="money fw-bold secondary-font">$31.31</h5>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination new-arrival-pagination position-relative d-block d-lg-none mt-5"></div>
+                <div class="swiper-pagination new-arrival-pagination position-relative mt-5"></div>
             </div>
-            <div class="position-absolute top-50 end-0 translate-middle-y me-5 main-slider-button-next d-lg-block d-none">
+            <div class="position-absolute top-50 end-0 translate-middle-y me-5 main-slider-button-next">
                 <svg class="arrow" width="80" height="80">
                     <use xlink:href="#arrow-right"></use>
                 </svg>
             </div>
-            <div class="position-absolute top-50 start-0 translate-middle-y ms-5 main-slider-button-prev d-lg-block d-none">
+            <div class="position-absolute top-50 start-0 translate-middle-y ms-5 main-slider-button-prev">
                 <svg class="arrow" width="80" height="80">
                     <use xlink:href="#arrow-left"></use>
                 </svg>
             </div>
         </div>
     </section>
+
+    <!-- Product Modals -->
+    <div class="modal fade" id="productModal1" tabindex="-1" aria-labelledby="productModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel1">Oversized t-shirt</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-4">
+                        <h6 class="mb-3">Select Size</h6>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-dark size-btn">S</button>
+                            <button class="btn btn-outline-dark size-btn">M</button>
+                            <button class="btn btn-outline-dark size-btn">L</button>
+                            <button class="btn btn-outline-dark size-btn">XL</button>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h6 class="mb-3">Select Colors</h6>
+                        <div class="d-flex gap-2">
+                            <button class="btn color-btn" style="background-color: #000000;"></button>
+                            <button class="btn color-btn" style="background-color: #ffffff; border: 1px solid #000;"></button>
+                            <button class="btn color-btn" style="background-color: #ff0000;"></button>
+                            <button class="btn color-btn" style="background-color: #0000ff;"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal2" tabindex="-1" aria-labelledby="productModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel2">Leather overcoat</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-4">
+                        <h6 class="mb-3">Select Size</h6>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-dark size-btn">S</button>
+                            <button class="btn btn-outline-dark size-btn">M</button>
+                            <button class="btn btn-outline-dark size-btn">L</button>
+                            <button class="btn btn-outline-dark size-btn">XL</button>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h6 class="mb-3">Select Colors</h6>
+                        <div class="d-flex gap-2">
+                            <button class="btn color-btn" style="background-color: #000000;"></button>
+                            <button class="btn color-btn" style="background-color: #ffffff; border: 1px solid #000;"></button>
+                            <button class="btn color-btn" style="background-color: #ff0000;"></button>
+                            <button class="btn color-btn" style="background-color: #0000ff;"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal3" tabindex="-1" aria-labelledby="productModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel3">The hundred hoody</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-4">
+                        <h6 class="mb-3">Select Size</h6>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-dark size-btn">S</button>
+                            <button class="btn btn-outline-dark size-btn">M</button>
+                            <button class="btn btn-outline-dark size-btn">L</button>
+                            <button class="btn btn-outline-dark size-btn">XL</button>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h6 class="mb-3">Select Colors</h6>
+                        <div class="d-flex gap-2">
+                            <button class="btn color-btn" style="background-color: #000000;"></button>
+                            <button class="btn color-btn" style="background-color: #ffffff; border: 1px solid #000;"></button>
+                            <button class="btn color-btn" style="background-color: #ff0000;"></button>
+                            <button class="btn color-btn" style="background-color: #0000ff;"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal4" tabindex="-1" aria-labelledby="productModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="productModalLabel4">Classic white tee</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-4">
+                        <h6 class="mb-3">Select Size</h6>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline-dark size-btn">S</button>
+                            <button class="btn btn-outline-dark size-btn">M</button>
+                            <button class="btn btn-outline-dark size-btn">L</button>
+                            <button class="btn btn-outline-dark size-btn">XL</button>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h6 class="mb-3">Select Colors</h6>
+                        <div class="d-flex gap-2">
+                            <button class="btn color-btn" style="background-color: #000000;"></button>
+                            <button class="btn color-btn" style="background-color: #ffffff; border: 1px solid #000;"></button>
+                            <button class="btn color-btn" style="background-color: #ff0000;"></button>
+                            <button class="btn color-btn" style="background-color: #0000ff;"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .display-1, .display-2, .display-5 {
+            font-family: 'Dancing Script', cursive;
+            font-weight: 700;
+        }
+        .review {
+            font-family: 'Caveat', cursive;
+            font-size: 1.8rem !important;
+            font-weight: 400;
+        }
+        .color-btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            padding: 0;
+            border: none;
+        }
+        .color-btn.active {
+            border: 2px solid #000;
+            transform: scale(1.1);
+        }
+        .size-btn {
+            min-width: 40px;
+        }
+        .size-btn.active {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".new-arrival-pagination",
+                clickable: true,
+                dynamicBullets: true
+            },
+            navigation: {
+                nextEl: ".main-slider-button-next",
+                prevEl: ".main-slider-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+            },
+        });
+
+        // Handle size selection
+        document.querySelectorAll('.size-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                this.parentElement.querySelectorAll('.size-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+
+        // Handle color selection (multiple selection)
+        document.querySelectorAll('.color-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                this.classList.toggle('active');
+            });
+        });
+    </script>
 
     <section id="review">
         <h3 class="display-1 mb-5 text-muted opacity-25">CUSTOMER'S REVIEWS</h3>
