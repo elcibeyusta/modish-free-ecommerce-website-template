@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="author" content="">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -82,7 +83,7 @@
                             <img src="images/newarrival-items1.jpg" alt="new1" class="img-fluid" data-bs-toggle="modal" data-bs-target="#productModal1">
                             <div class="d-flex justify-content-between mt-2">
                                 <h5><a href="#" class="item-name secondary-font">Oversized t-shirt</a></h5>
-                                <h5 class="money fw-bold secondary-font">$31.31</h5>
+                                <h5 class="money fw-bold secondary-font">$20.00</h5>
                             </div>
                         </div>
                     </div>
@@ -91,7 +92,7 @@
                             <img src="images/newarrival-items2.jpg" alt="new2" class="img-fluid" data-bs-toggle="modal" data-bs-target="#productModal2">
                             <div class="d-flex justify-content-between mt-2">
                                 <h5><a href="#" class="item-name secondary-font">Leather overcoat</a></h5>
-                                <h5 class="money fw-bold secondary-font">$31.31</h5>
+                                <h5 class="money fw-bold secondary-font">$20.00</h5>
                             </div>
                         </div>
                     </div>
@@ -100,21 +101,57 @@
                             <img src="images/newarrival-items3.jpg" alt="new3" class="img-fluid" data-bs-toggle="modal" data-bs-target="#productModal3">
                             <div class="d-flex justify-content-between mt-2">
                                 <h5><a href="#" class="item-name secondary-font">The hundred hoody</a></h5>
-                                <h5 class="money fw-bold secondary-font">$31.31</h5>
+                                <h5 class="money fw-bold secondary-font">$20.00</h5>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
                         <div class="product-item position-relative">
-                            <img src="images/newarrival-items1.jpg" alt="new4" class="img-fluid" data-bs-toggle="modal" data-bs-target="#productModal4">
+                            <img src="images/newarrival-items4.jpg" alt="new4" class="img-fluid" data-bs-toggle="modal" data-bs-target="#productModal4">
                             <div class="d-flex justify-content-between mt-2">
                                 <h5><a href="#" class="item-name secondary-font">Classic white tee</a></h5>
-                                <h5 class="money fw-bold secondary-font">$31.31</h5>
+                                <h5 class="money fw-bold secondary-font">$20.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-item position-relative">
+                            <img src="images/newarrival-items1.jpg" alt="new1-duplicate" class="img-fluid" data-bs-toggle="modal" data-bs-target="#productModal1">
+                            <div class="d-flex justify-content-between mt-2">
+                                <h5><a href="#" class="item-name secondary-font">Oversized t-shirt</a></h5>
+                                <h5 class="money fw-bold secondary-font">$20.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-item position-relative">
+                            <img src="images/newarrival-items2.jpg" alt="new2-duplicate" class="img-fluid" data-bs-toggle="modal" data-bs-target="#productModal2">
+                            <div class="d-flex justify-content-between mt-2">
+                                <h5><a href="#" class="item-name secondary-font">Leather overcoat</a></h5>
+                                <h5 class="money fw-bold secondary-font">$20.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-item position-relative">
+                            <img src="images/newarrival-items3.jpg" alt="new3-duplicate" class="img-fluid" data-bs-toggle="modal" data-bs-target="#productModal3">
+                            <div class="d-flex justify-content-between mt-2">
+                                <h5><a href="#" class="item-name secondary-font">The hundred hoody</a></h5>
+                                <h5 class="money fw-bold secondary-font">$20.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product-item position-relative">
+                            <img src="images/newarrival-items4.jpg" alt="new4-duplicate" class="img-fluid" data-bs-toggle="modal" data-bs-target="#productModal4">
+                            <div class="d-flex justify-content-between mt-2">
+                                <h5><a href="#" class="item-name secondary-font">Classic white tee</a></h5>
+                                <h5 class="money fw-bold secondary-font">$20.00</h5>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination new-arrival-pagination"></div>
+                <div class="swiper-pagination"></div>
             </div>
             <div class="position-absolute top-50 end-0 translate-middle-y me-5 main-slider-button-next">
                 <svg class="arrow" width="80" height="80">
@@ -370,18 +407,20 @@
         }
 
         /* Swiper Pagination Styles */
+        .swiper-pagination {
+            position: relative;
+            margin-top: 2rem;
+        }
         .swiper-pagination-bullet {
-            width: 10px;
-            height: 10px;
+            width: 12px;
+            height: 12px;
             background: #000;
             opacity: 0.5;
+            margin: 0 8px;
         }
         .swiper-pagination-bullet-active {
             opacity: 1;
             background: #000;
-        }
-        .new-arrival-pagination {
-            margin-top: 2rem !important;
         }
     </style>
 
@@ -400,12 +439,9 @@
                 spaceBetween: 30,
                 loop: true,
                 pagination: {
-                    el: ".new-arrival-pagination",
+                    el: ".swiper-pagination",
                     clickable: true,
                     dynamicBullets: true,
-                    renderBullet: function (index, className) {
-                        return '<span class="' + className + '"></span>';
-                    },
                 },
                 navigation: {
                     nextEl: ".main-slider-button-next",
@@ -511,7 +547,7 @@
 
                     const product = {
                         name: productName,
-                        price: 31.31,
+                        price: 20.00,
                         size: selectedSize,
                         color: selectedColor,
                         image: document.querySelector(`[data-bs-target="#${modal.id}"] img`).src,

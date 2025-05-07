@@ -568,7 +568,7 @@ svg.primary-color {
 }
 
 .navbar-toggler-icon {
-  background-image: url(images/images.png);
+  background-image: url(images/Logo.png);
 }
 
 .navbar-nav {
@@ -884,4 +884,16 @@ Account page style start
 .nav-tabs .nav-item.show .nav-link.account-tab,
 .nav-tabs .nav-link.account-tab.active {
   color: var(--accent-color);
+}
+
+.subscribe-button:hover {
+    background-color: #555;
+}
+
+/* Example of a background image if needed, ensure the path is correct */
+.hero-section {
+    /* background-image: url(images/hero-background.jpg); */ /* Example */
+    background-image: url(images/Logo.png); /* Corrected path */
+    background-size: cover;
+    background-position: center;
 }
