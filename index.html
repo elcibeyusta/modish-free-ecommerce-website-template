@@ -23,9 +23,6 @@
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google Fonts ================================================== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -40,6 +37,16 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <div class="d-flex align-items-center">
+                    <button class="btn position-relative" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 2a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm-1.646-7.646-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L8 8.293l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                        </svg>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger cart-count">
+                            0
+                        </span>
+                    </button>
+                </div>
             </div>
         </nav>
     </header>
@@ -107,7 +114,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination new-arrival-pagination position-relative mt-5"></div>
+                <div class="swiper-pagination new-arrival-pagination"></div>
             </div>
             <div class="position-absolute top-50 end-0 translate-middle-y me-5 main-slider-button-next">
                 <svg class="arrow" width="80" height="80">
@@ -143,10 +150,12 @@
                     <div class="mb-4">
                         <h6 class="mb-3">Select Colors</h6>
                         <div class="d-flex gap-2">
-                            <button class="btn color-btn" style="background-color: #000000;"></button>
-                            <button class="btn color-btn" style="background-color: #ffffff; border: 1px solid #000;"></button>
-                            <button class="btn color-btn" style="background-color: #ff0000;"></button>
+                            <button class="btn color-btn" style="background-color: #ffff00;"></button>
+                            <button class="btn color-btn" style="background-color: #ffa500;"></button>
                             <button class="btn color-btn" style="background-color: #0000ff;"></button>
+                            <button class="btn color-btn" style="background-color: #800080;"></button>
+                            <button class="btn color-btn" style="background-color: #ff0000;"></button>
+                            <button class="btn color-btn" style="background-color: #008000;"></button>
                         </div>
                     </div>
                 </div>
@@ -177,10 +186,12 @@
                     <div class="mb-4">
                         <h6 class="mb-3">Select Colors</h6>
                         <div class="d-flex gap-2">
-                            <button class="btn color-btn" style="background-color: #000000;"></button>
-                            <button class="btn color-btn" style="background-color: #ffffff; border: 1px solid #000;"></button>
-                            <button class="btn color-btn" style="background-color: #ff0000;"></button>
+                            <button class="btn color-btn" style="background-color: #ffff00;"></button>
+                            <button class="btn color-btn" style="background-color: #ffa500;"></button>
                             <button class="btn color-btn" style="background-color: #0000ff;"></button>
+                            <button class="btn color-btn" style="background-color: #800080;"></button>
+                            <button class="btn color-btn" style="background-color: #ff0000;"></button>
+                            <button class="btn color-btn" style="background-color: #008000;"></button>
                         </div>
                     </div>
                 </div>
@@ -211,10 +222,12 @@
                     <div class="mb-4">
                         <h6 class="mb-3">Select Colors</h6>
                         <div class="d-flex gap-2">
-                            <button class="btn color-btn" style="background-color: #000000;"></button>
-                            <button class="btn color-btn" style="background-color: #ffffff; border: 1px solid #000;"></button>
-                            <button class="btn color-btn" style="background-color: #ff0000;"></button>
+                            <button class="btn color-btn" style="background-color: #ffff00;"></button>
+                            <button class="btn color-btn" style="background-color: #ffa500;"></button>
                             <button class="btn color-btn" style="background-color: #0000ff;"></button>
+                            <button class="btn color-btn" style="background-color: #800080;"></button>
+                            <button class="btn color-btn" style="background-color: #ff0000;"></button>
+                            <button class="btn color-btn" style="background-color: #008000;"></button>
                         </div>
                     </div>
                 </div>
@@ -245,10 +258,12 @@
                     <div class="mb-4">
                         <h6 class="mb-3">Select Colors</h6>
                         <div class="d-flex gap-2">
-                            <button class="btn color-btn" style="background-color: #000000;"></button>
-                            <button class="btn color-btn" style="background-color: #ffffff; border: 1px solid #000;"></button>
-                            <button class="btn color-btn" style="background-color: #ff0000;"></button>
+                            <button class="btn color-btn" style="background-color: #ffff00;"></button>
+                            <button class="btn color-btn" style="background-color: #ffa500;"></button>
                             <button class="btn color-btn" style="background-color: #0000ff;"></button>
+                            <button class="btn color-btn" style="background-color: #800080;"></button>
+                            <button class="btn color-btn" style="background-color: #ff0000;"></button>
+                            <button class="btn color-btn" style="background-color: #008000;"></button>
                         </div>
                     </div>
                 </div>
@@ -260,25 +275,48 @@
     </div>
 
     <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
         .display-1, .display-2, .display-5 {
-            font-family: 'Dancing Script', cursive;
-            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
         }
         .review {
-            font-family: 'Caveat', cursive;
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 1.8rem !important;
-            font-weight: 400;
+        }
+        .item-name, .money, .btn, .modal-title, h6 {
+            font-family: Arial, Helvetica, sans-serif;
         }
         .color-btn {
             width: 30px;
             height: 30px;
             border-radius: 50%;
             padding: 0;
-            border: none;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
         .color-btn.active {
-            border: 2px solid #000;
+            border: 2px solid #000 !important;
             transform: scale(1.1);
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }
+        .color-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.1);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .color-btn[data-selected="true"]::after {
+            opacity: 1;
         }
         .size-btn {
             min-width: 40px;
@@ -287,46 +325,223 @@
             background-color: #000;
             color: #fff;
         }
+
+        /* Cart Styles */
+        .cart-items {
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .cart-item img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-right: 15px;
+        }
+        .cart-item-details {
+            flex-grow: 1;
+        }
+        .cart-item-price {
+            font-weight: bold;
+        }
+        .cart-item-remove {
+            color: #dc3545;
+            cursor: pointer;
+            padding: 5px;
+        }
+        .cart-item-quantity {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .quantity-btn {
+            padding: 2px 8px;
+            border: 1px solid #ddd;
+            background: none;
+            cursor: pointer;
+        }
+        .quantity-btn:hover {
+            background-color: #f8f9fa;
+        }
+
+        /* Swiper Pagination Styles */
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background: #000;
+            opacity: 0.5;
+        }
+        .swiper-pagination-bullet-active {
+            opacity: 1;
+            background: #000;
+        }
+        .new-arrival-pagination {
+            margin-top: 2rem !important;
+        }
     </style>
 
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            loop: true,
-            pagination: {
-                el: ".new-arrival-pagination",
-                clickable: true,
-                dynamicBullets: true
-            },
-            navigation: {
-                nextEl: ".main-slider-button-next",
-                prevEl: ".main-slider-button-prev",
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 4,
-                },
-            },
-        });
-
-        // Handle size selection
-        document.querySelectorAll('.size-btn').forEach(button => {
-            button.addEventListener('click', function() {
-                this.parentElement.querySelectorAll('.size-btn').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-                this.classList.add('active');
+        // Initialize Bootstrap modals
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize all modals
+            var modals = document.querySelectorAll('.modal');
+            modals.forEach(function(modal) {
+                new bootstrap.Modal(modal);
             });
-        });
 
-        // Handle color selection (multiple selection)
-        document.querySelectorAll('.color-btn').forEach(button => {
-            button.addEventListener('click', function() {
-                this.classList.toggle('active');
+            // Initialize Swiper
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: ".new-arrival-pagination",
+                    clickable: true,
+                    dynamicBullets: true,
+                    renderBullet: function (index, className) {
+                        return '<span class="' + className + '"></span>';
+                    },
+                },
+                navigation: {
+                    nextEl: ".main-slider-button-next",
+                    prevEl: ".main-slider-button-prev",
+                },
+                breakpoints: {
+                    640: {
+                        slidesPerView: 2,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                    },
+                },
+            });
+
+            // Simple cart object
+            const cart = {
+                items: [],
+                
+                addItem: function(product) {
+                    this.items.push(product);
+                    this.updateCart();
+                },
+                
+                removeItem: function(index) {
+                    this.items.splice(index, 1);
+                    this.updateCart();
+                },
+                
+                updateCart: function() {
+                    // Update cart count
+                    const count = this.items.length;
+                    document.querySelector('.cart-count').textContent = count;
+                    
+                    // Update cart display
+                    const cartItems = document.getElementById('cartItems');
+                    const cartTotal = document.getElementById('cartTotal');
+                    
+                    cartItems.innerHTML = '';
+                    let total = 0;
+                    
+                    this.items.forEach((item, index) => {
+                        const itemTotal = item.price * item.quantity;
+                        total += itemTotal;
+                        
+                        cartItems.innerHTML += `
+                            <div class="cart-item">
+                                <img src="${item.image}" alt="${item.name}">
+                                <div class="cart-item-details">
+                                    <h6>${item.name}</h6>
+                                    <p class="mb-1">Size: ${item.size}</p>
+                                    <p class="mb-1">Color: ${item.color}</p>
+                                    <div class="cart-item-quantity">
+                                        <button class="quantity-btn" onclick="cart.removeItem(${index})">Remove</button>
+                                    </div>
+                                </div>
+                                <div class="cart-item-price">$${itemTotal.toFixed(2)}</div>
+                            </div>
+                        `;
+                    });
+                    
+                    cartTotal.textContent = total.toFixed(2);
+                }
+            };
+
+            // Make cart globally available
+            window.cart = cart;
+
+            // Handle size selection
+            document.querySelectorAll('.size-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const modal = this.closest('.modal');
+                    modal.querySelectorAll('.size-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                });
+            });
+
+            // Handle color selection
+            document.querySelectorAll('.color-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const modal = this.closest('.modal');
+                    modal.querySelectorAll('.color-btn').forEach(btn => {
+                        btn.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                });
+            });
+
+            // Add to cart functionality
+            document.querySelectorAll('.modal-footer .btn-dark').forEach(button => {
+                button.addEventListener('click', function() {
+                    const modal = this.closest('.modal');
+                    const productName = modal.querySelector('.modal-title').textContent;
+                    const selectedSize = modal.querySelector('.size-btn.active')?.textContent;
+                    const selectedColor = modal.querySelector('.color-btn.active')?.style.backgroundColor;
+
+                    if (!selectedSize || !selectedColor) {
+                        alert('Please select both size and color');
+                        return;
+                    }
+
+                    const product = {
+                        name: productName,
+                        price: 31.31,
+                        size: selectedSize,
+                        color: selectedColor,
+                        image: document.querySelector(`[data-bs-target="#${modal.id}"] img`).src,
+                        quantity: 1
+                    };
+
+                    cart.addItem(product);
+                    
+                    // Close the modal
+                    const modalInstance = bootstrap.Modal.getInstance(modal);
+                    if (modalInstance) {
+                        modalInstance.hide();
+                    }
+                });
+            });
+
+            // Checkout button
+            document.getElementById('checkoutBtn').addEventListener('click', function() {
+                if (cart.items.length === 0) {
+                    alert('Your cart is empty!');
+                    return;
+                }
+                alert('Thank you for your purchase!');
+                cart.items = [];
+                cart.updateCart();
+                const cartModal = document.getElementById('cartModal');
+                const modalInstance = bootstrap.Modal.getInstance(cartModal);
+                if (modalInstance) {
+                    modalInstance.hide();
+                }
             });
         });
     </script>
@@ -377,6 +592,31 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="js/plugins.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/cart.js"></script>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cartItems" class="cart-items">
+                        <!-- Cart items will be dynamically added here -->
+                    </div>
+                    <div class="text-end mt-3">
+                        <h5>Total: $<span id="cartTotal">0.00</span></h5>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                    <button type="button" class="btn btn-dark" id="checkoutBtn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
