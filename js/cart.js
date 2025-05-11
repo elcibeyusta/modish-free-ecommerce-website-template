@@ -93,24 +93,22 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Found color buttons:', colorButtons.length);
     
     colorButtons.forEach(button => {
-        button.addEventListener('mousedown', function(e) {
-            e.preventDefault(); // Prevent default behavior
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
             
             console.log('Color button clicked');
             const modal = this.closest('.modal');
-            const selected = modal.querySelectorAll('.color-btn[data-selected="true"]');
-            console.log('Currently selected colors:', selected.length);
+            const selected = modal.querySelectorAll('.color-btn.active');
+            console.log('Currently selected colors (using .active):', selected.length);
             
-            if (this.getAttribute('data-selected') === 'true') {
+            if (this.classList.contains('active')) {
                 this.classList.remove('active');
-                this.setAttribute('data-selected', 'false');
                 console.log('Color deselected');
-            } else if (selected.length < 2) {
+            } else if (selected.length < 3) {
                 this.classList.add('active');
-                this.setAttribute('data-selected', 'true');
                 console.log('Color selected');
             } else {
-                alert('You can select up to 2 colors');
+                alert('You can select up to 3 colors.');
             }
         });
     });
@@ -122,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const modal = this.closest('.modal');
             const productName = modal.querySelector('.modal-title').textContent;
             const selectedSize = modal.querySelector('.size-btn.active')?.textContent;
-            const selectedColors = Array.from(modal.querySelectorAll('.color-btn[data-selected="true"]')).map(btn => btn.style.backgroundColor);
+            const selectedColors = Array.from(modal.querySelectorAll('.color-btn.active')).map(btn => btn.style.backgroundColor);
 
             console.log('Selected size:', selectedSize);
             console.log('Selected colors:', selectedColors);
@@ -132,13 +130,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
             if (selectedColors.length === 0) {
-                alert('Please select at least one color');
+                alert('Please select at least one color (up to 3).');
+                return;
+            }
+            if (selectedColors.length > 3) {
+                alert('You can select a maximum of 3 colors.');
                 return;
             }
 
             const product = {
                 name: productName,
-                price: 31.31,
+                price: 699.99,
                 size: selectedSize,
                 color: selectedColors.join(', '),
                 image: document.querySelector(`img[data-bs-target="#${modal.id}"]`).src,
